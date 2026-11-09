@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Personalize o título e a descrição com o nome do seu setor -->
-  <title>[Nome do Setor] — InfoHub UEMG Carangola</title>
+  <title>Horas Complementares (ACG) — InfoHub UEMG Carangola</title>
   <meta name="description"
-    content="Portal Informativo do [Nome do Setor] da UEMG Unidade Carangola. Normativas, fluxos oficiais e autoatendimento acadêmico." />
+    content="Guia geral das Atividades Complementares de Graduação (ACG) da UEMG: como funciona a tabela de pontuação, limites por modalidade, prazos semestrais e envio de certificados." />
   <meta name="theme-color" content="#003366" />
 
   <!-- Favicon e Folhas de Estilo -->
@@ -57,17 +57,17 @@
   <section class="hero-section" aria-labelledby="hero-heading">
     <div class="container hero-content">
       <!-- Substitua pelo número e categoria do seu setor -->
-      <div class="hero-badge">Setor 01 • [Categoria do Setor]</div>
+      <div class="hero-badge">Graduação • Atividades Complementares</div>
 
       <!-- Substitua pelo nome oficial do setor -->
       <h1 id="hero-heading" class="hero-title">
-        [Nome Completo do Setor Institucional]
+        Horas Complementares — Atividades Complementares de Graduação (ACG)
       </h1>
 
       <!-- Substitua pela síntese do objetivo deste portal setorial -->
       <p class="hero-lead">
-        Guia de autoatendimento, fluxos de processos, normativas vigentes e esclarecimento de dúvidas frequentes da
-        comunidade acadêmica da UEMG Carangola.
+        Entenda como funciona a tabela de pontuação das ACG, os limites por modalidade, os prazos semestrais e o
+        envio de certificados. Um guia geral para calouros e veteranos de todos os cursos da UEMG.
       </p>
 
       <!-- Indicadores rápidos do setor (personalize os textos abaixo se desejar) -->
@@ -78,7 +78,7 @@
             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
             <polyline points="22 4 12 14.01 9 11.01"></polyline>
           </svg>
-          <span>Fluxos Homologados</span>
+          <span>Tabelas de Pontuação Comparadas</span>
         </div>
         <div class="hero-stat-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -88,14 +88,14 @@
             <line x1="8" y1="2" x2="8" y2="6"></line>
             <line x1="3" y1="10" x2="21" y2="10"></line>
           </svg>
-          <span>Calendário Atualizado</span>
+          <span>Prazos Semestrais</span>
         </div>
         <div class="hero-stat-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
           </svg>
-          <span>Canais Oficiais UEMG</span>
+          <span>Envio de Certificados</span>
         </div>
       </div>
     </div>
@@ -109,55 +109,659 @@
   <main id="main-content" role="main" class="setor-main-section">
     <div class="container">
 
-      <!-- Cabeçalho de Introdução do Setor -->
-      <header class="setor-section-header">
-        <p class="setor-section-subtitle">Autoatendimento & Informações</p>
-        <h2 class="setor-section-title">Serviços e Orientações do Setor</h2>
-        <p class="setor-section-desc">
-          Selecione o procedimento desejado abaixo para consultar os requisitos, documentação necessária e prazos
-          regulamentares.
-        </p>
-      </header>
+      <!-- Navegação rápida pelos tópicos da página -->
+      <nav class="acg-quicknav" aria-label="Tópicos desta página">
+        <a href="#o-que-sao">O que são</a>
+        <a href="#pontuacao">Pontuação</a>
+        <a href="#limites">Limites</a>
+        <a href="#prazos">Prazos</a>
+        <a href="#certificados">Certificados</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#contatos">Onde confirmar</a>
+      </nav>
 
-      <!-- Exemplo de Grid de Cards (Substitua ou expanda conforme a modelagem do grupo) -->
-      <div class="setor-cards-grid">
-
-        <!-- Card de Exemplo 1: Processos e Fluxos -->
-        <article class="setor-card">
-          <h3>📋 Como Solicitar Atendimento</h3>
-          <p>
-            Descreva aqui o passo a passo que o discente ou docente deve seguir para abrir uma solicitação junto ao
-            setor, formulários necessários e prazos médios de resposta.
-          </p>
-        </article>
-
-        <!-- Card de Exemplo 2: Normativas e Regulamentos -->
-        <article class="setor-card">
-          <h3>📑 Regulamentos e Portarias</h3>
-          <p>
-            Links diretos para editais, resoluções do COEPE e manuais oficiais que fundamentam as regras deste setor
-            acadêmico.
-          </p>
-        </article>
-
-        <!-- Card de Exemplo 3: Contatos e Horários -->
-        <article class="setor-card">
-          <h3>⏰ Horários e Equipe Responsável</h3>
-          <p>
-            Informações sobre coordenação, e-mails institucionais oficiais (@uemg.br) e plantões presenciais na Unidade
-            Carangola.
-          </p>
-        </article>
-
-      </div>
-
-      <!-- Box de Destaque / Importante -->
-      <div class="setor-callout" role="note">
-        <h4>💡 Atenção aos Prazos do Calendário Acadêmico</h4>
+      <!-- Aviso geral -->
+      <div class="setor-callout acg-callout-top" role="note">
+        <h4>⚠️ Cada curso tem a sua própria tabela</h4>
         <p>
-          Lembre-se de conferir as datas-limite no calendário oficial da UEMG antes de submeter sua documentação.
+          As regras das ACG são definidas no <strong>Projeto Pedagógico do Curso (PPC)</strong> e no regulamento de
+          atividades complementares de cada curso ou Unidade. Esta página explica o que é comum entre elas e mostra
+          exemplos reais, mas a regra que vale para você é a do PPC em que você foi matriculado(a).
         </p>
       </div>
+
+      <!-- =====================================================================
+           1. O QUE SÃO AS ACG
+           ===================================================================== -->
+      <section id="o-que-sao" class="acg-section" aria-labelledby="o-que-sao-title">
+        <header class="setor-section-header">
+          <p class="setor-section-subtitle">Primeiros passos</p>
+          <h2 id="o-que-sao-title" class="setor-section-title">O que são as Atividades Complementares</h2>
+          <p class="setor-section-desc">
+            São atividades feitas fora das disciplinas obrigatórias, como eventos, cursos, pesquisa, extensão e
+            monitoria, que complementam a sua formação. Elas são <strong>obrigatórias</strong>: sem cumprir a carga
+            horária exigida pelo seu curso, não é possível colar grau.
+          </p>
+        </header>
+
+        <div class="setor-cards-grid">
+          <article class="setor-card">
+            <h3>🎓 Fazem parte do currículo</h3>
+            <p>
+              A carga horária de ACG é um componente curricular, como as disciplinas. Ela costuma ser distribuída ao
+              longo dos períodos e aparece no seu histórico escolar depois de validada.
+            </p>
+          </article>
+          <article class="setor-card">
+            <h3>🏷️ Podem ter outros nomes</h3>
+            <p>
+              Dependendo do curso, você pode encontrar <strong>ACG</strong> (Atividades Complementares de Graduação),
+              <strong>AC</strong> (Atividades Complementares) ou <strong>AACC</strong> (Atividades
+              Acadêmico-Científico-Culturais). Todos se referem ao mesmo tipo de exigência.
+            </p>
+          </article>
+          <article class="setor-card">
+            <h3>⏱️ A carga total varia</h3>
+            <p>
+              Nos documentos que analisamos, a exigência ia de <strong>150 a 240 horas</strong>, dependendo do curso.
+              Confira no PPC do seu curso quantas horas você precisa cumprir.
+            </p>
+          </article>
+        </div>
+
+        <h3 class="acg-subtitle">Como as atividades costumam ser organizadas</h3>
+        <ul class="acg-modalidades">
+          <li class="acg-modalidade" data-modalidade="ensino">
+            <span class="acg-tag acg-tag--ensino">Ensino</span>
+            <p>Monitoria, cursos na área, disciplinas de outros cursos, estágio não obrigatório e visitas técnicas.</p>
+          </li>
+          <li class="acg-modalidade" data-modalidade="pesquisa">
+            <span class="acg-tag acg-tag--pesquisa">Pesquisa</span>
+            <p>Iniciação científica, grupos de estudo, apresentação de trabalhos e publicações.</p>
+          </li>
+          <li class="acg-modalidade" data-modalidade="extensao">
+            <span class="acg-tag acg-tag--extensao">Extensão</span>
+            <p>Projetos de extensão, participação em eventos e organização de eventos.</p>
+          </li>
+          <li class="acg-modalidade" data-modalidade="cultura">
+            <span class="acg-tag acg-tag--cultura">Cultura e esporte</span>
+            <p>Exposições, teatro, cinema, museus, atividades artísticas e eventos esportivos.</p>
+          </li>
+          <li class="acg-modalidade" data-modalidade="cidadania">
+            <span class="acg-tag acg-tag--cidadania">Representação e cidadania</span>
+            <p>Representação estudantil, gestão de entidades estudantis, voluntariado e mesário.</p>
+          </li>
+        </ul>
+        <p class="acg-footnote">
+          Essa divisão é uma organização didática desta página. Cada curso agrupa as atividades do seu jeito: por
+          exemplo, em Ensino, Pesquisa e Extensão, ou em "Grupo 1" e "Grupo 2".
+        </p>
+      </section>
+
+      <!-- =====================================================================
+           2. EIXO 1 — TABELA DE PONTUAÇÃO
+           ===================================================================== -->
+      <section id="pontuacao" class="acg-section" aria-labelledby="pontuacao-title">
+        <header class="setor-section-header">
+          <p class="setor-section-subtitle">Eixo 1</p>
+          <h2 id="pontuacao-title" class="setor-section-title">Tabela de pontuação: quanto vale cada atividade</h2>
+          <p class="setor-section-desc">
+            Toda tabela de ACG diz, para cada tipo de atividade, quantas horas ela vale e qual comprovante é
+            exigido. A regra mais comum é a <strong>paridade</strong>: 1 hora de atividade vale 1 hora de ACG. Mas há
+            variações: algumas atividades valem um número fixo de horas, e outras valem mais, como a organização de
+            eventos, que em um dos cursos vale o dobro.
+          </p>
+        </header>
+
+        <div class="setor-callout acg-callout-warning" role="note">
+          <h4>📌 Exemplos reais, de versões anteriores</h4>
+          <p>
+            A tabela abaixo compara documentos de três cursos de Unidades diferentes. Eles podem estar desatualizados
+            e servem <strong>apenas para ilustrar</strong> como as regras funcionam e quanto elas variam. Não use estes
+            valores para planejar as suas horas: consulte a tabela do seu curso.
+          </p>
+        </div>
+
+        <div class="acg-filters" role="group" aria-label="Filtrar atividades por modalidade">
+          <button type="button" class="acg-filter-btn" data-filter="todas" aria-pressed="true">Todas</button>
+          <button type="button" class="acg-filter-btn" data-filter="ensino" aria-pressed="false">Ensino</button>
+          <button type="button" class="acg-filter-btn" data-filter="pesquisa" aria-pressed="false">Pesquisa</button>
+          <button type="button" class="acg-filter-btn" data-filter="extensao" aria-pressed="false">Extensão</button>
+          <button type="button" class="acg-filter-btn" data-filter="cultura" aria-pressed="false">Cultura e esporte</button>
+          <button type="button" class="acg-filter-btn" data-filter="cidadania" aria-pressed="false">Representação e cidadania</button>
+        </div>
+        <p class="acg-filter-status" id="acg-filter-status" aria-live="polite"></p>
+
+        <div class="setor-table-wrapper" tabindex="0" role="region" aria-labelledby="acg-table-caption">
+          <table class="setor-table acg-table">
+            <caption id="acg-table-caption">
+              Comparativo de pontuação de ACG em três cursos da UEMG (exemplos ilustrativos)
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Atividade</th>
+                <th scope="col">Serviço Social<span>Unidade Passos · PPC 2025</span></th>
+                <th scope="col">Sistemas de Informação<span>Unidade Carangola · PPC 2018</span></th>
+                <th scope="col">Escola de Design<span>Belo Horizonte · Tabela 2023</span></th>
+              </tr>
+              <tr class="acg-table-total">
+                <th scope="row">Carga total exigida</th>
+                <td>180 h</td>
+                <td>240 h</td>
+                <td>150 h</td>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Ensino -->
+              <tr data-modalidade="ensino">
+                <th scope="row"><span class="acg-tag acg-tag--ensino">Ensino</span>Monitoria acadêmica</th>
+                <td>30 h por disciplina (máx. 30 h); monitoria voluntária ou tutoria: até 10 h por disciplina (máx. 30 h)</td>
+                <td>Até 45 h</td>
+                <td>Até 40 h por semestre (máx. 80 h)</td>
+              </tr>
+              <tr data-modalidade="ensino">
+                <th scope="row"><span class="acg-tag acg-tag--ensino">Ensino</span>Disciplinas de outros cursos ou instituições</th>
+                <td>5 h de ACG a cada 20 h cursadas (máx. 20 h)</td>
+                <td class="acg-na">Não listada</td>
+                <td>Até 30 h por semestre (máx. 30 h), por requerimento na Secretaria</td>
+              </tr>
+              <tr data-modalidade="ensino">
+                <th scope="row"><span class="acg-tag acg-tag--ensino">Ensino</span>Cursos de extensão ou aperfeiçoamento</th>
+                <td>Presenciais: 1 h = 1 h (máx. 60 h); a distância: 1 h = 1 h (máx. 40 h)</td>
+                <td>Na área do curso: até 45 h; fora da área: até 30 h</td>
+                <td>Até 30 h por semestre (máx. 60 h)</td>
+              </tr>
+              <tr data-modalidade="ensino">
+                <th scope="row"><span class="acg-tag acg-tag--ensino">Ensino</span>Cursos de idiomas</th>
+                <td>20 h</td>
+                <td class="acg-na">Não listado à parte</td>
+                <td>De 3 a 20 h-aula por semestre, só níveis concluídos (máx. 20 h)</td>
+              </tr>
+              <tr data-modalidade="ensino">
+                <th scope="row"><span class="acg-tag acg-tag--ensino">Ensino</span>Estágio não obrigatório</th>
+                <td>Até 10 h por estágio (máx. 30 h)</td>
+                <td>Na área do curso: até 60 h; fora da área: até 45 h</td>
+                <td>Só as horas que excedem o estágio obrigatório: até 30 h por semestre (máx. 60 h)</td>
+              </tr>
+              <tr data-modalidade="ensino">
+                <th scope="row"><span class="acg-tag acg-tag--ensino">Ensino</span>Visitas técnicas</th>
+                <td>Até 10 h por semestre (máx. 30 h)</td>
+                <td>Até 30 h</td>
+                <td>Mínimo de 5 h por visita; até 15 h por semestre (máx. 30 h)</td>
+              </tr>
+              <tr data-modalidade="ensino">
+                <th scope="row"><span class="acg-tag acg-tag--ensino">Ensino</span>Assistir a defesas de TCC</th>
+                <td class="acg-na">Não listado</td>
+                <td>1 h por apresentação assistida (máx. 30 h)</td>
+                <td class="acg-na">Não listado</td>
+              </tr>
+
+              <!-- Pesquisa -->
+              <tr data-modalidade="pesquisa">
+                <th scope="row"><span class="acg-tag acg-tag--pesquisa">Pesquisa</span>Iniciação científica e projetos de pesquisa</th>
+                <td>Bolsa de iniciação científica: 30 h (máx. 30 h); participação voluntária em pesquisa: 15 h</td>
+                <td>Até 60 h</td>
+                <td>Até 40 h por semestre (máx. 80 h)</td>
+              </tr>
+              <tr data-modalidade="pesquisa">
+                <th scope="row"><span class="acg-tag acg-tag--pesquisa">Pesquisa</span>Grupos de estudo ou de pesquisa</th>
+                <td>30 h por semestre (máx. 30 h)</td>
+                <td>Até 15 h</td>
+                <td>Até 20 h por semestre (máx. 40 h)</td>
+              </tr>
+              <tr data-modalidade="pesquisa">
+                <th scope="row"><span class="acg-tag acg-tag--pesquisa">Pesquisa</span>Apresentação de trabalhos em eventos</th>
+                <td>Local: 15 h · Regional: 20 h · Nacional: 30 h · Internacional: 40 h (máx. 40 h)</td>
+                <td>Apresentação oral: até 30 h; painéis: até 30 h</td>
+                <td class="acg-na">Não listada</td>
+              </tr>
+              <tr data-modalidade="pesquisa">
+                <th scope="row"><span class="acg-tag acg-tag--pesquisa">Pesquisa</span>Publicações</th>
+                <td>Livro indexado: 60 h · Capítulo ou periódico indexado: 40 h · Anais: 20 h · Não indexada: 20 h (máx. 60 h)</td>
+                <td>Artigos em revista: até 30 h</td>
+                <td class="acg-na">Não listada</td>
+              </tr>
+
+              <!-- Extensão -->
+              <tr data-modalidade="extensao">
+                <th scope="row"><span class="acg-tag acg-tag--extensao">Extensão</span>Projetos e atividades de extensão</th>
+                <td>Na UEMG: 1 h = 1 h (máx. 30 h)</td>
+                <td>Até 60 h</td>
+                <td>Só as horas que excedem a extensão obrigatória do curso: até 40 h por semestre (máx. 40 h)</td>
+              </tr>
+              <tr data-modalidade="extensao">
+                <th scope="row"><span class="acg-tag acg-tag--extensao">Extensão</span>Ouvinte em palestras, seminários, congressos e oficinas</th>
+                <td>1 h = 1 h (máx. 60 h)</td>
+                <td>Eventos científicos: até 60 h; eventos de extensão: até 60 h</td>
+                <td>Congressos e seminários: de 5 a 15 h-aula (máx. 60 h); oficinas: de 3 a 20 h-aula por semestre (máx. 60 h)</td>
+              </tr>
+              <tr data-modalidade="extensao">
+                <th scope="row"><span class="acg-tag acg-tag--extensao">Extensão</span>Organização de eventos</th>
+                <td>1 h de evento = 2 h de ACG (máx. 60 h)</td>
+                <td>Até 30 h</td>
+                <td class="acg-na">Não listada</td>
+              </tr>
+
+              <!-- Cultura e esporte -->
+              <tr data-modalidade="cultura">
+                <th scope="row"><span class="acg-tag acg-tag--cultura">Cultura e esporte</span>Atividades culturais e artísticas</th>
+                <td>Artísticas ligadas à área: 10 h por atividade (máx. 20 h); socioculturais: até 2 h por evento (máx. 10 h)</td>
+                <td>Museus, feiras de livros, exposições e teatro: até 45 h</td>
+                <td>Palestras, exposições e eventos culturais: de 1 a 15 h por semestre (máx. 45 h); sessões comentadas: 3 h cada (máx. 30 h)</td>
+              </tr>
+              <tr data-modalidade="cultura">
+                <th scope="row"><span class="acg-tag acg-tag--cultura">Cultura e esporte</span>Eventos esportivos</th>
+                <td>Até 2 h por evento (máx. 10 h, somado às atividades socioculturais)</td>
+                <td>Até 30 h</td>
+                <td class="acg-na">Não listado</td>
+              </tr>
+
+              <!-- Representação e cidadania -->
+              <tr data-modalidade="cidadania">
+                <th scope="row"><span class="acg-tag acg-tag--cidadania">Representação e cidadania</span>Representação estudantil em órgãos colegiados</th>
+                <td>Instâncias da UEMG: 10 h por semestre (máx. 30 h); colegiado de curso: 10 h</td>
+                <td>Até 30 h, conforme as horas de reunião</td>
+                <td class="acg-na">Não listada nesta versão (incluída no quadro de 2025)</td>
+              </tr>
+              <tr data-modalidade="cidadania">
+                <th scope="row"><span class="acg-tag acg-tag--cidadania">Representação e cidadania</span>Gestão de entidades estudantis</th>
+                <td>10 h por semestre (máx. 30 h)</td>
+                <td class="acg-na">Não listada</td>
+                <td class="acg-na">Não listada nesta versão (incluída no quadro de 2025)</td>
+              </tr>
+              <tr data-modalidade="cidadania">
+                <th scope="row"><span class="acg-tag acg-tag--cidadania">Representação e cidadania</span>Voluntariado e projetos sociais</th>
+                <td>Até 8 h por evento (máx. 30 h)</td>
+                <td class="acg-na">Não listado</td>
+                <td class="acg-na">Não listado</td>
+              </tr>
+              <tr data-modalidade="cidadania">
+                <th scope="row"><span class="acg-tag acg-tag--cidadania">Representação e cidadania</span>Mesário universitário (TRE-MG)</th>
+                <td class="acg-na">Não listado</td>
+                <td class="acg-na">Não listado</td>
+                <td>Até 15 h por semestre (máx. 30 h)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <ul class="acg-notes">
+          <li>
+            <strong>"Não listado"</strong> significa que a atividade não aparece na tabela daquele documento, e não que
+            seja proibida. Os documentos preveem que atividades fora da lista sejam avaliadas pelo Colegiado ou pela
+            Coordenação do curso.
+          </li>
+          <li>
+            <strong>"máx."</strong> é o teto: o máximo de horas que aquela atividade pode somar ao longo de todo o
+            curso.
+          </li>
+          <li>
+            <strong>As tabelas mudam com o tempo.</strong> No quadro de 2025 da Escola de Design, por exemplo, os
+            tetos por atividade deixaram de existir: as horas validadas passaram a contar integralmente, mas o
+            estudante precisa cumprir pelo menos 3 categorias diferentes.
+          </li>
+        </ul>
+      </section>
+
+      <!-- =====================================================================
+           3. EIXO 2 — LIMITES POR MODALIDADE
+           ===================================================================== -->
+      <section id="limites" class="acg-section" aria-labelledby="limites-title">
+        <header class="setor-section-header">
+          <p class="setor-section-subtitle">Eixo 2</p>
+          <h2 id="limites-title" class="setor-section-title">Limites por modalidade</h2>
+          <p class="setor-section-desc">
+            Não adianta completar todas as horas com um só tipo de atividade. As tabelas de ACG usam limites para
+            garantir uma formação diversificada. Os mais comuns são estes:
+          </p>
+        </header>
+
+        <div class="setor-cards-grid acg-grid-2">
+          <article class="setor-card">
+            <h3>📏 Teto por atividade</h3>
+            <p>
+              Cada atividade pode somar só até certo número de horas no curso todo. Tudo o que passar do teto não é
+              aproveitado.
+            </p>
+            <p class="acg-example">Exemplo: monitoria com teto de 30 h (Serviço Social) ou de 45 h (Sistemas de Informação).</p>
+          </article>
+          <article class="setor-card">
+            <h3>🗓️ Teto por semestre</h3>
+            <p>
+              Alguns cursos também limitam quantas horas de uma atividade podem ser validadas em cada semestre, o que
+              obriga a distribuir as atividades ao longo do curso.
+            </p>
+            <p class="acg-example">Exemplo: iniciação científica com até 40 h por semestre e 80 h no total (Escola de Design, 2023).</p>
+          </article>
+          <article class="setor-card">
+            <h3>📊 Teto por modalidade</h3>
+            <p>
+              Há cursos que limitam a porcentagem da carga total que cada modalidade pode ocupar.
+            </p>
+            <p class="acg-example">Exemplo: no máximo 60% em Ensino, 40% em Extensão e 40% em Pesquisa (Serviço Social).</p>
+          </article>
+          <article class="setor-card">
+            <h3>🧩 Diversificação obrigatória</h3>
+            <p>
+              Em todos os documentos analisados existe a exigência de variar os tipos de atividade. O mínimo muda
+              conforme o curso.
+            </p>
+            <p class="acg-example">Exemplos: pelo menos 2 categorias (Serviço Social), 3 categorias (Escola de Design, 2025) ou 4 atividades diferentes (Sistemas de Informação).</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           4. EIXO 3 — PRAZOS SEMESTRAIS
+           ===================================================================== -->
+      <section id="prazos" class="acg-section" aria-labelledby="prazos-title">
+        <header class="setor-section-header">
+          <p class="setor-section-subtitle">Eixo 3</p>
+          <h2 id="prazos-title" class="setor-section-title">Prazos semestrais</h2>
+          <p class="setor-section-desc">
+            As ACG são contabilizadas <strong>a cada semestre</strong>. O caminho de uma atividade, da realização até o
+            histórico escolar, costuma seguir estas etapas:
+          </p>
+        </header>
+
+        <ol class="acg-timeline">
+          <li class="acg-timeline-step">
+            <h3>Faça a atividade</h3>
+            <p>
+              Só contam atividades feitas <strong>depois do seu ingresso no curso</strong>. Elas podem ser feitas a
+              qualquer momento, inclusive nas férias.
+            </p>
+          </li>
+          <li class="acg-timeline-step">
+            <h3>Guarde o comprovante</h3>
+            <p>
+              Confira se o certificado tem todos os dados exigidos (veja o Eixo 4). Atenção: alguns cursos dão
+              validade aos certificados, como <strong>12 meses</strong> após o fim da atividade no quadro de 2025 da
+              Escola de Design.
+            </p>
+          </li>
+          <li class="acg-timeline-step">
+            <h3>Entregue dentro do semestre</h3>
+            <p>
+              O prazo varia: há cursos que aceitam até o <strong>último dia letivo</strong> e outros que pedem a entrega
+              cerca de <strong>30 dias antes do fim do semestre</strong>. A data exata está no regulamento do seu curso
+              e no Calendário Acadêmico.
+            </p>
+          </li>
+          <li class="acg-timeline-step">
+            <h3>Análise e parecer</h3>
+            <p>
+              A coordenação responsável analisa os comprovantes e aceita ou recusa cada atividade. Documentos recusados
+              costumam ser devolvidos ao estudante.
+            </p>
+          </li>
+          <li class="acg-timeline-step">
+            <h3>Registro no histórico</h3>
+            <p>As horas aprovadas são lançadas no seu histórico escolar e somadas à carga exigida pelo curso.</p>
+          </li>
+        </ol>
+
+        <div class="setor-callout" role="note">
+          <h4>💡 Não deixe para o último semestre</h4>
+          <p>
+            Em alguns cursos, atividades não computadas em um semestre podem ser lançadas no seguinte, <strong>exceto
+            no último semestre do curso</strong>. Distribua as atividades desde o 1º período: além de evitar
+            imprevistos, isso ajuda a respeitar os tetos por semestre.
+          </p>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           5. EIXO 4 — ENVIO DE CERTIFICADOS
+           ===================================================================== -->
+      <section id="certificados" class="acg-section" aria-labelledby="certificados-title">
+        <header class="setor-section-header">
+          <p class="setor-section-subtitle">Eixo 4</p>
+          <h2 id="certificados-title" class="setor-section-title">Envio de certificados</h2>
+          <p class="setor-section-desc">
+            Toda atividade precisa de comprovação: certificado, declaração, atestado ou relatório, conforme o tipo de
+            atividade. Antes de entregar, confira o seu documento.
+          </p>
+        </header>
+
+        <div class="acg-two-cols">
+          <div class="acg-checklist-box">
+            <h3>✅ O certificado precisa ter</h3>
+            <p class="acg-checklist-hint">Marque os itens para conferir o seu documento (nada é salvo ou enviado).</p>
+            <ul class="acg-checklist">
+              <li><label><input type="checkbox" class="acg-check" /> Seu nome completo e o nome do responsável pela atividade</label></li>
+              <li><label><input type="checkbox" class="acg-check" /> Nome da instituição responsável</label></li>
+              <li><label><input type="checkbox" class="acg-check" /> Descrição e carga horária da atividade</label></li>
+              <li><label><input type="checkbox" class="acg-check" /> Assinatura (ou carimbo) do responsável</label></li>
+              <li><label><input type="checkbox" class="acg-check" /> Data de realização da atividade (dia/mês/ano)</label></li>
+              <li><label><input type="checkbox" class="acg-check" /> Data de emissão do certificado</label></li>
+            </ul>
+            <p class="acg-checklist-status" id="acg-checklist-status" aria-live="polite">0 de 6 itens conferidos</p>
+          </div>
+
+          <div class="acg-delivery">
+            <h3>📤 Para quem entregar</h3>
+            <p>
+              Cada curso define o setor que recebe os comprovantes. Nos documentos analisados, encontramos:
+            </p>
+            <ul class="acg-list">
+              <li>uma <strong>Coordenação de ACG</strong> do curso, por protocolo;</li>
+              <li>a <strong>Coordenação do Curso</strong>, com protocolo na Secretaria Acadêmica;</li>
+              <li>um <strong>Setor de Atividades Complementares</strong>, por e-mail.</li>
+            </ul>
+            <p>Pergunte à coordenação ou à secretaria do seu curso qual é o canal e o formulário corretos.</p>
+
+            <h3>🗂️ Boas práticas</h3>
+            <ul class="acg-list">
+              <li>Guarde cópias de todos os comprovantes até a colação de grau: há cursos que pedem esse portfólio.</li>
+              <li>Quando o curso exigir relatório, descreva a atividade com clareza e diga o que você aprendeu com ela.</li>
+              <li>Entregue os comprovantes aos poucos, a cada semestre, e não tudo de uma vez no final.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="setor-callout acg-callout-danger" role="note">
+          <h4>🚫 Falsificar certificado é crime</h4>
+          <p>
+            Alterar ou falsificar um documento comprobatório é crime previsto no Art. 298 do Código Penal, com pena de
+            reclusão de um a cinco anos e multa, além das sanções acadêmicas.
+          </p>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           6. O QUE NÃO CONTA E ONDE CONSEGUIR HORAS
+           ===================================================================== -->
+      <section class="acg-section" aria-labelledby="nao-conta-title">
+        <div class="acg-two-cols">
+          <div class="acg-panel acg-panel--muted">
+            <h2 id="nao-conta-title" class="acg-panel-title">❌ O que geralmente não conta</h2>
+            <ul class="acg-list">
+              <li>Estágio supervisionado obrigatório e TCC (só as horas que <em>excedem</em> o obrigatório podem contar, em alguns cursos).</li>
+              <li>Atividades que já fazem parte das disciplinas do currículo.</li>
+              <li>Atividades feitas antes do ingresso no curso.</li>
+              <li>Atividades profissionais regulares e remuneradas.</li>
+              <li>Disciplinas que já foram usadas para outra dispensa.</li>
+            </ul>
+          </div>
+
+          <div class="acg-panel">
+            <h2 class="acg-panel-title">🚀 Onde conseguir horas na UEMG</h2>
+            <ul class="acg-list">
+              <li><strong>Monitoria</strong> pelo Programa de Ensino em Monitoria Acadêmica (PEMA).</li>
+              <li>
+                <strong>Iniciação científica</strong> com bolsas
+                <a href="https://www.uemg.br/pesquisa/programas/papq-uemg" target="_blank" rel="noopener noreferrer">PAPq ↗</a>,
+                Fapemig e CNPq.
+              </li>
+              <li>
+                <strong>Projetos de extensão</strong> pelo
+                <a href="https://uemg.br/extensao/editais-paex" target="_blank" rel="noopener noreferrer">PAEx ↗</a>.
+              </li>
+              <li><strong>PET</strong>, <strong>Empresas Juniores</strong> e <strong>Ligas Acadêmicas</strong>.</li>
+              <li>Eventos da sua Unidade, como semanas acadêmicas, seminários e simpósios.</li>
+              <li>
+                Editais em geral são publicados em
+                <a href="https://uemg.br/publicacoes" target="_blank" rel="noopener noreferrer">uemg.br/publicacoes ↗</a>.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           7. PERGUNTAS FREQUENTES
+           ===================================================================== -->
+      <section id="duvidas" class="acg-section" aria-labelledby="duvidas-title">
+        <header class="setor-section-header">
+          <p class="setor-section-subtitle">Dúvidas frequentes</p>
+          <h2 id="duvidas-title" class="setor-section-title">Perguntas frequentes sobre ACG</h2>
+        </header>
+
+        <div class="setor-faq">
+          <details class="setor-faq-item">
+            <summary>Sou veterano(a) e a tabela do meu curso mudou. Qual vale para mim?</summary>
+            <p>
+              Em geral, vale a tabela do PPC em que você foi matriculado(a). Tabelas novas costumam indicar a partir de
+              qual turma de ingresso passam a valer. Na dúvida, confirme com a coordenação do seu curso.
+            </p>
+          </details>
+          <details class="setor-faq-item">
+            <summary>Uma atividade feita antes de eu entrar no curso conta?</summary>
+            <p>
+              Normalmente não. Os documentos analisados aceitam apenas atividades realizadas depois do ingresso no
+              curso.
+            </p>
+          </details>
+          <details class="setor-faq-item">
+            <summary>Posso completar todas as horas com um único tipo de atividade?</summary>
+            <p>
+              Não. Todos os documentos analisados exigem diversificação, seja por um número mínimo de categorias, seja
+              por tetos por atividade e por modalidade.
+            </p>
+          </details>
+          <details class="setor-faq-item">
+            <summary>Cursos on-line e a distância valem?</summary>
+            <p>
+              Depende do curso. Em um dos exemplos, cursos a distância na área valem com paridade de 1 h para 1 h, mas
+              com teto menor que o dos cursos presenciais. Confira a tabela do seu curso.
+            </p>
+          </details>
+          <details class="setor-faq-item">
+            <summary>O que acontece com as horas que passam do teto?</summary>
+            <p>Elas não são aproveitadas. Por isso vale a pena variar as atividades.</p>
+          </details>
+          <details class="setor-faq-item">
+            <summary>Qual a diferença entre ACG e as horas de extensão obrigatórias?</summary>
+            <p>
+              São componentes diferentes. Em alguns cursos, só as horas de extensão que <strong>excedem</strong> a carga
+              obrigatória viram ACG. Em outros, a participação apenas como ouvinte em ações de extensão conta como ACG,
+              mas não como extensão curricular.
+            </p>
+          </details>
+          <details class="setor-faq-item">
+            <summary>Fui transferido(a) de outra instituição. Perco as horas que já tinha?</summary>
+            <p>
+              Você continua sujeito(a) à carga horária de ACG do novo curso, mas pode solicitar o aproveitamento das
+              horas atribuídas pela instituição de origem. A análise é feita pela coordenação do curso.
+            </p>
+          </details>
+          <details class="setor-faq-item">
+            <summary>E se eu não completar as horas até o fim do curso?</summary>
+            <p>
+              Sem a carga horária mínima de ACG, o curso não é integralizado e não é possível colar grau. Em um dos
+              exemplos, a pendência não impede a passagem de período, mas impede a conclusão do curso.
+            </p>
+          </details>
+          <details class="setor-faq-item">
+            <summary>Minha atividade não está na tabela. E agora?</summary>
+            <p>
+              Os casos não previstos costumam ser avaliados pelo Colegiado ou pela Coordenação do curso. Consulte a
+              coordenação <strong>antes</strong> de fazer a atividade, se possível.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           8. ONDE CONFIRMAR E COM QUEM FALAR
+           ===================================================================== -->
+      <section id="contatos" class="acg-section" aria-labelledby="contatos-title">
+        <header class="setor-section-header">
+          <p class="setor-section-subtitle">Informação oficial</p>
+          <h2 id="contatos-title" class="setor-section-title">Onde confirmar e com quem falar</h2>
+          <p class="setor-section-desc">
+            Esta página é um guia geral. Para as regras que valem para você, procure as fontes e as pessoas abaixo.
+          </p>
+        </header>
+
+        <div class="setor-cards-grid">
+          <article class="setor-card">
+            <h3>📘 PPC e regulamento do seu curso</h3>
+            <p>
+              É onde estão a carga horária exigida, a tabela de pontuação e os prazos de entrega. Peça a versão
+              correspondente ao seu ano de ingresso à coordenação ou à secretaria do curso.
+            </p>
+          </article>
+          <article class="setor-card">
+            <h3>🧭 Guia Acadêmico da UEMG</h3>
+            <p>Reúne as informações gerais de ensino, pesquisa, extensão e serviços para estudantes.</p>
+            <p>
+              <a class="acg-link" href="https://estudante.uemg.br" target="_blank" rel="noopener noreferrer">
+                Acessar estudante.uemg.br ↗
+              </a>
+            </p>
+          </article>
+          <article class="setor-card">
+            <h3>🏛️ Portal oficial da UEMG</h3>
+            <p>Resoluções, Calendário Acadêmico, editais e a página da sua Unidade, com os contatos da Secretaria.</p>
+            <p>
+              <a class="acg-link" href="https://www.uemg.br" target="_blank" rel="noopener noreferrer">
+                Acessar uemg.br ↗
+              </a>
+            </p>
+          </article>
+        </div>
+
+        <h3 class="acg-subtitle">Com quem falar</h3>
+        <ul class="acg-contacts">
+          <li>
+            <strong>Coordenação de Atividades Complementares</strong>
+            <span>Recebe e analisa os comprovantes. O nome varia: Coordenação de ACG, Setor de AC, Coordenador de AACC.</span>
+          </li>
+          <li>
+            <strong>Coordenação do Curso</strong>
+            <span>Tira dúvidas sobre a tabela, o PPC e as atividades que podem ser aceitas.</span>
+          </li>
+          <li>
+            <strong>Colegiado de Curso</strong>
+            <span>É a primeira instância de decisão sobre a vida acadêmica e avalia os casos não previstos na tabela.</span>
+          </li>
+          <li>
+            <strong>Secretaria Acadêmica da Unidade</strong>
+            <span>Protocolo de documentos e histórico escolar. O e-mail está na página da sua Unidade no portal da UEMG.</span>
+          </li>
+        </ul>
+
+        <div class="setor-callout" role="note">
+          <h4>📢 Prevalecem os documentos oficiais</h4>
+          <p>
+            Em caso de divergência entre esta página e o PPC, o regulamento do seu curso ou as resoluções da UEMG, valem
+            sempre os documentos oficiais. As normas podem mudar: acompanhe os informativos da sua Unidade.
+          </p>
+        </div>
+
+        <details class="acg-sources">
+          <summary>Documentos consultados para montar esta página</summary>
+          <ul>
+            <li>Guia Acadêmico 2026 — UEMG (Reitoria).</li>
+            <li>Projeto Pedagógico do Curso de Serviço Social — Unidade Passos (Resolução COEPE/UEMG nº 521/2025), Apêndice II e Anexos 2 e 3.</li>
+            <li>Projeto Pedagógico do Curso de Sistemas de Informação — Unidade Carangola (2018), Regulamento nº 001/2015 e Anexo V.</li>
+            <li>Tabela de Atividades Complementares 2023 — Escola de Design (Belo Horizonte).</li>
+            <li>Quadro de Atividades Complementares 1/2025 — Escola de Design (Belo Horizonte).</li>
+          </ul>
+        </details>
+      </section>
 
       <!-- FIM DO CONTEÚDO EXEMPLIFICATIVO DO GRUPO -->
 

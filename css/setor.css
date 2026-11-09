@@ -109,3 +109,583 @@
 /* ==========================================================================
    ADICIONE ABAIXO OS SEUS PRÓPRIOS ESTILOS ESPECÍFICOS PARA O SETOR:
    ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Horas Complementares (ACG) — Estrutura geral
+   -------------------------------------------------------------------------- */
+.acg-section {
+  margin-bottom: var(--spacing-3xl);
+  scroll-margin-top: 90px; /* compensa o header fixo ao navegar pelas âncoras */
+}
+
+.acg-subtitle {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: var(--spacing-xl) 0 var(--spacing-md);
+}
+
+.acg-footnote {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-top: var(--spacing-sm);
+}
+
+.acg-link {
+  color: var(--color-primary-light);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.acg-link:hover {
+  color: var(--color-accent-amber);
+}
+
+.acg-section a:focus-visible,
+.acg-quicknav a:focus-visible,
+.acg-filter-btn:focus-visible,
+.setor-faq-item summary:focus-visible,
+.setor-table-wrapper:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+/* Navegação rápida */
+.acg-quicknav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.acg-quicknav a {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.acg-quicknav a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+}
+
+/* Variações do callout */
+.acg-callout-top {
+  margin-top: 0;
+  margin-bottom: var(--spacing-2xl);
+  border-left-color: var(--color-primary);
+  background-color: var(--color-badge-bg);
+}
+
+.acg-callout-warning {
+  margin-top: 0;
+  margin-bottom: var(--spacing-lg);
+  background-color: var(--color-badge-amber-bg);
+}
+
+.acg-callout-danger {
+  border-left-color: var(--color-accent);
+  background-color: #fef2f2;
+}
+
+.setor-callout + .acg-sources,
+.acg-section > .setor-callout {
+  margin-top: var(--spacing-xl);
+}
+
+/* --------------------------------------------------------------------------
+   Modalidades e etiquetas (tags)
+   -------------------------------------------------------------------------- */
+.acg-tag {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+
+.acg-tag--ensino { background-color: #e0f2fe; color: #075985; }
+.acg-tag--pesquisa { background-color: #ede9fe; color: #5b21b6; }
+.acg-tag--extensao { background-color: #dcfce7; color: #166534; }
+.acg-tag--cultura { background-color: #fff7ed; color: #9a3412; }
+.acg-tag--cidadania { background-color: #fce7f3; color: #9d174d; }
+
+.acg-modalidades {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+@media (min-width: 640px) {
+  .acg-modalidades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .acg-modalidades {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.acg-modalidade {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-card);
+}
+
+.acg-modalidade p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-main);
+  margin-top: var(--spacing-sm);
+}
+
+/* --------------------------------------------------------------------------
+   Eixo 1 — Filtros e tabela comparativa
+   -------------------------------------------------------------------------- */
+.acg-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.acg-filter-btn {
+  font: inherit;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-pill);
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.acg-filter-btn:hover {
+  background-color: var(--color-surface-hover);
+}
+
+.acg-filter-btn[aria-pressed="true"] {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+}
+
+.acg-filter-status {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
+  min-height: 1.2em;
+}
+
+.setor-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.setor-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  font-size: var(--font-size-sm);
+}
+
+.setor-table caption {
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.setor-table th,
+.setor-table td {
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.setor-table thead th {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-light);
+  font-weight: 700;
+}
+
+.acg-table thead th span {
+  display: block;
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.acg-table .acg-table-total th,
+.acg-table .acg-table-total td {
+  background-color: var(--color-badge-bg);
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+.acg-table tbody th {
+  width: 22%;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.acg-table tbody th .acg-tag {
+  display: block;
+  width: fit-content;
+  margin-bottom: 4px;
+}
+
+.acg-table tbody tr:nth-child(even) {
+  background-color: var(--color-surface-hover);
+}
+
+.acg-table td.acg-na {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.acg-notes {
+  list-style: none;
+  margin-top: var(--spacing-md);
+  display: grid;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.acg-notes li::before {
+  content: "• ";
+  color: var(--color-accent-amber);
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------
+   Eixo 2 — Cards de limites
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  .acg-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.setor-card .acg-example {
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-bg);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Eixo 3 — Linha do tempo
+   -------------------------------------------------------------------------- */
+.acg-timeline {
+  list-style: none;
+  counter-reset: acg-step;
+  position: relative;
+  display: grid;
+  gap: var(--spacing-lg);
+  padding-left: 0;
+}
+
+.acg-timeline::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 19px;
+  width: 2px;
+  background-color: var(--color-border);
+}
+
+.acg-timeline-step {
+  counter-increment: acg-step;
+  position: relative;
+  padding-left: 56px;
+}
+
+.acg-timeline-step::before {
+  content: counter(acg-step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  font-weight: 800;
+  box-shadow: 0 0 0 4px var(--color-bg);
+}
+
+.acg-timeline-step h3 {
+  font-size: var(--font-size-base);
+  color: var(--color-primary);
+  margin-bottom: 4px;
+  padding-top: 8px;
+}
+
+.acg-timeline-step p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-main);
+}
+
+@media (min-width: 1024px) {
+  .acg-timeline {
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--spacing-md);
+  }
+
+  .acg-timeline::before {
+    top: 19px;
+    bottom: auto;
+    left: 20px;
+    right: 20px;
+    width: auto;
+    height: 2px;
+  }
+
+  .acg-timeline-step {
+    padding-left: 0;
+    padding-top: 56px;
+  }
+
+  .acg-timeline-step h3 {
+    padding-top: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Eixo 4 — Checklist e entrega
+   -------------------------------------------------------------------------- */
+.acg-two-cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 900px) {
+  .acg-two-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.acg-checklist-box,
+.acg-delivery,
+.acg-panel {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.acg-checklist-box h3,
+.acg-delivery h3 {
+  font-size: var(--font-size-md);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.acg-delivery h3 + p,
+.acg-delivery p {
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.acg-delivery h3:not(:first-child) {
+  margin-top: var(--spacing-lg);
+}
+
+.acg-checklist-hint {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
+}
+
+.acg-checklist {
+  list-style: none;
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+.acg-checklist label {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.acg-checklist label:hover {
+  background-color: var(--color-surface-hover);
+}
+
+.acg-checklist input {
+  margin-top: 4px;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  accent-color: var(--color-primary);
+}
+
+.acg-checklist label:has(input:checked) {
+  background-color: #f0fdf4;
+  border-color: #86efac;
+}
+
+.acg-checklist-status {
+  margin-top: var(--spacing-md);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.acg-checklist-status.is-complete {
+  color: #166534;
+}
+
+.acg-list {
+  padding-left: var(--spacing-lg);
+  display: grid;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Painéis "o que não conta" / "onde conseguir horas" */
+.acg-panel-title {
+  font-size: var(--font-size-lg);
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.acg-panel--muted {
+  background-color: var(--color-surface-hover);
+}
+
+.acg-panel a {
+  color: var(--color-primary-light);
+  font-weight: 600;
+}
+
+.acg-panel a:hover {
+  color: var(--color-accent-amber);
+}
+
+/* --------------------------------------------------------------------------
+   FAQ (padrão do Guia do Estudante)
+   -------------------------------------------------------------------------- */
+.setor-faq {
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+.setor-faq-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  transition: box-shadow var(--transition-fast);
+}
+
+.setor-faq-item[open] {
+  box-shadow: var(--shadow-card);
+  border-color: var(--color-primary-light);
+}
+
+.setor-faq-item summary {
+  font-weight: 700;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.setor-faq-item p {
+  margin-top: var(--spacing-sm);
+  color: var(--color-text-main);
+  font-size: var(--font-size-sm);
+}
+
+/* --------------------------------------------------------------------------
+   Contatos e fontes
+   -------------------------------------------------------------------------- */
+.acg-contacts {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .acg-contacts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.acg-contacts li {
+  background-color: var(--color-surface);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.acg-contacts strong {
+  display: block;
+  color: var(--color-primary-dark);
+  margin-bottom: 4px;
+}
+
+.acg-contacts span {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.acg-sources {
+  margin-top: var(--spacing-lg);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.acg-sources summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.acg-sources ul {
+  margin-top: var(--spacing-sm);
+  padding-left: var(--spacing-lg);
+  display: grid;
+  gap: 4px;
+}
